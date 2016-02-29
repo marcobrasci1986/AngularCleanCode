@@ -5,12 +5,15 @@
         .module('app.dashboard')
         .controller('Dashboard', Dashboard);
 
-    Dashboard.$inject = ['$q', 'dataservice', 'logger'];
+    Dashboard.$inject =
+        ['$q', 'dataservice', 'logger', 'testService'];
 
-    function Dashboard($q, dataservice, logger) {
+    function Dashboard($q, dataservice, logger, testService) {
 
         /*jshint validthis: true */
         var vm = this;
+
+        console.log(testService.ping());
 
         vm.news = {
             title: 'Marvel Avengers',

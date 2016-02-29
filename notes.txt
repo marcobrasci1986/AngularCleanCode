@@ -1,0 +1,14 @@
+Seperation of concers (SoC):
+-----------------------
+Rule of One -> ravioli code
+Reusable code
+
+Organize by Type of by Feature.
+
+LIFT principle:
+L: locate code easy -> organize by type or feature
+I: Identify -> filenames
+F: Flat structure ->
+T: -> Try to stay DRY
+
+YAGNI: You ain't gonna need it (yet)
